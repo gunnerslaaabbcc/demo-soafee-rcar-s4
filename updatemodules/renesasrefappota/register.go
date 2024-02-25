@@ -5,7 +5,7 @@ import (
     "encoding/json"
     "github.com/aoscloud/aos_common/aoserrors"
     "github.com/aoscloud/aos_updatemanager/updatehandler"
-    "github.com/aoscloud/aos_updatemanager/updatemodules/partitions/rebooters/xenstorerebooter"
+    //"github.com/aoscloud/aos_updatemanager/updatemodules/partitions/rebooters/xenstorerebooter"
 )
 
 /*******************************************************************************
@@ -27,7 +27,7 @@ func init() {
    		 }
 
    		 if module, err = New(id, configJSON,
-   			 storage, &xenstorerebooter.XenstoreRebooter{}); err != nil {
+   			 storage, nil); err != nil {
    			 return nil, aoserrors.Wrap(err)
    		 }
 
